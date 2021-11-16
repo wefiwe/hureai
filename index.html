@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>ふれあい広場</title>
+    <link rel="icon" href="./img/dog.png">
+    <link rel="apple-touch-icon" href="./img/dog.png">
+</head>
+
+<body>
+    <div class="header-menu">
+        <div class="header-left">
+            <p>ふれあい広場</p>
+        </div>
+        <div class="openbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">トップ</a></li>
+                <li><a href="#">ふれあい広場とは</a></li>
+                <li><a href="#">動物紹介</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="goto_top" style="display: none;">
+        <a href="#">TOP</a>
+    </div>
+    </p>
+    <main>
+        <div class="main-title">
+            <img src="./img/friends-1149841_1920.jpg" alt="">
+            <p>かわいい動物たちとふれあえる<br>癒しのひと時を...</p>
+        </div>
+        <div class="about-title">
+            <h1>ふれあい広場とは</h1>
+        </div>
+        <div class="about">
+            <img src="./img/cat-3261420_1920.jpg" alt="">
+            <div class="text-box">
+                <p><span>ふれあい広場はその名の通り、</span><span>イヌやネコ、人懐っこい動物</span><span>とふれあえる場所です。</span><span>動物たちからたくさんの</span><span>癒しや元気をあなたへ</span>
+                </p>
+            </div>
+        </div>
+        <h1>動物紹介</h1>
+        <div class="syokai">
+            <div class="animal">
+                <h2>イヌ</h2>
+                <img src="./img/rottweiler-1785760_1920.jpg" alt="">
+            </div>
+            <div class="animal">
+                <h2>ネコ</h2>
+                <img src="./img/cat-1245673_1920.jpg" alt="">
+            </div>
+            <div class="animal">
+                <h2>レッサーパンダ</h2>
+                <img src="./img/animals-1852823_1920.jpg" alt="">
+            </div>
+            <div class="animal">
+                <h2>リスザル</h2>
+                <img src="./img/monkey.jpg" alt="">
+            </div>
+            <div class="animal">
+                <h2>文鳥</h2>
+                <img src="./img/bird.jpg" alt="">
+            </div>
+            <div class="animal">
+                <h2>ハリネズミ</h2>
+                <img src="./img/hedgehog-1215140_1920.jpg" alt="">
+            </div>
+        </div>
+        <div class="syokai-text">
+            <p>どの子もみんな人懐っこくて<br>優しいので安心して楽しめます</p>
+        </div>
+    </main>
+    <div class="contact">
+        <h1>お問い合わせ</h1>
+        <form action="#">
+            <div>
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="your-name">
+            </div>
+            <div>
+                <label for="email">メールアドレス</label>
+                <input type="text" id="email" name="your-email">
+            </div>
+            <div>
+                <label for="message">お問い合わせ内容</label>
+                <textarea name="your-message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="button" value="送信">
+            </div>
+        </form>
+    </div>
+    <div class="map">
+        <div class="address">
+            <p>住所：沖縄県中頭郡北中城村ライカム１番地</p>
+            <p>電話番号：090-◯◯◯◯-◯◯◯◯</p>
+            <p>メールアドレス：hureai@.com</p>
+            <p>営業時間：10:00〜17:00</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4882.640919675822!2d127.7957492089287!3d26.314613336654578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5126214d2f427%3A0xcb2e803176e4f16b!2z44Kk44Kq44Oz44Oi44O844Or5rKW57iE44Op44Kk44Kr44Og!5e0!3m2!1sja!2sjp!4v1634474989153!5m2!1sja!2sjp"
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <footer>
+        <p>©️ Hureai Square.2021.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

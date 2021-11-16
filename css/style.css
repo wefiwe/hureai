@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+body::before {
+    background: url(../img/background-6650672_1920.jpg) center no-repeat;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 235, 205, 0.9);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    padding-top: 150px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.header-left {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    padding-right: 40px;
+}
+
+.menu li {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(245, 158, 158);
+    text-decoration: none;
+}
+
+#goto_top {
+    position: fixed;
+    right: 5%;
+    bottom: 14%;
+}
+
+#goto_top a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(245, 158, 158, .6);
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 78px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.main-title {
+    position: relative;
+    text-align: center;
+}
+
+.main-title img {
+    background-size: cover;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    vertical-align: top;
+    margin-top: 170px;
+}
+
+.main-title p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    /* width: 560px; */
+    text-align: center;
+    white-space: nowrap;
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px rgb(0, 139, 70), -2px 2px 10px rgb(0, 139, 70), 2px -2px 10px rgb(0, 139, 70), -2px -2px 10px rgb(0, 139, 70);
+}
+
+.about {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.about img {
+    width: 100%;
+    max-width: 550px;
+    vertical-align: middle;
+    box-shadow: 8px 6px 8px rgb(82, 81, 81);
+}
+
+.text-box {
+    font-size: 25px;
+    line-height: 1.7em;
+    width: 100%;
+    max-width: 550px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 15px;
+    background-color: rgb(255, 235, 205, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.syokai {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.animal {
+    font-size: 27px;
+    text-align: center;
+}
+
+.animal img {
+    width: 280px;
+    border-radius: 25px;
+    border: 1px solid rgb(245, 158, 158);
+    color: #000000;
+}
+
+.syokai-text {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form div {
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+}
+
+.button {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.map {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.address {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 500px;
+    font-size: 24px;
+    text-align: left;
+    line-height: 2em;
+}
+
+iframe {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+}
+
+footer {
+    background-color: rgb(255, 235, 205, 0.8);
+    height: 100px;
+    color: gray;
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+@media screen and (max-width:759px) {
+    /* スマホ用 */
+    h1 {
+        font-size: 40px;
+    }
+    .header-menu {
+        height: 70px;
+    }
+    .header-left {
+        margin: 0;
+        font-size: 33px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        white-space: nowrap;
+    }
+    .menu {
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        left: 120%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255, .9);
+        transition: all .6s;
+    }
+    .menu.panelactive {
+        left: 0;
+    }
+    .menu ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        flex-direction: column;
+        padding: 0;
+    }
+    .menu li {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+    .menu a {
+        display: block;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 28px;
+        padding-top: 50px;
+    }
+    .openbtn {
+        position: fixed;
+        z-index: 999;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+    .openbtn span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 5px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: rgb(245, 158, 158);
+        width: 30px;
+    }
+    .openbtn span:nth-of-type(1) {
+        top: 18px;
+    }
+    .openbtn span:nth-of-type(2) {
+        top: 26px;
+    }
+    .openbtn span:nth-of-type(3) {
+        top: 34px;
+    }
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px)rotate(-45deg);
+        width: 50%;
+    }
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .openbtn.active span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px)rotate(45deg);
+        width: 50%;
+    }
+    #goto_top {
+        right: 7%;
+    }
+    #goto_top a {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+    .main-title img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+    }
+    .main-title p {
+        font-size: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .about {
+        margin-top: 70px;
+    }
+    .about img {
+        width: 300px;
+    }
+    .text-box {
+        font-size: 22px;
+        margin: 0;
+        margin-top: 15px;
+        width: 370px;
+    }
+    .text-box span {
+        display: inline-block;
+    }
+    .syokai {
+        display: flex;
+        flex-flow: column;
+        margin-top: 70px;
+    }
+    .animal {
+        margin-bottom: 25px;
+    }
+    .syokai-text {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        max-width: 230px;
+    }
+    textarea {
+        max-width: 260px;
+        height: 100px;
+    }
+    .address {
+        font-size: 16px;
+        text-align: center;
+    }
+    .footer p {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (min-width:759px) and (max-width:1023px) {
+    /* タブレット用 */
+    h1 {
+        font-size: 60px;
+    }
+    .header-left {
+        font-size: 6vw;
+    }
+    .menu ul {
+        padding-right: 20px;
+    }
+    .menu li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .main-title p {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    .text-box {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .syokai {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+    }
+    .animal img {
+        margin: 0;
+    }
+    .address {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width:1120px) {
+    /* pc用 */
+    .main-title p {
+        top: 50%;
+        left: 45%;
+    }
+    .text-box {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
